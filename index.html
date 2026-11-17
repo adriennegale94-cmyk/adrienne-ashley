@@ -107,7 +107,80 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15
 .contact-links{display:flex;flex-wrap:wrap;align-items:center;gap:24px 36px;margin-top:32px}
 .contact-links .arrow{display:inline-block;color:#f3f0e9;border-bottom-color:#b7c2ad;font-size:16px;font-weight:600}
 .contact-links .arrow:hover{color:#b7c2ad}
-</style></head><body><div class="container"><nav class="nav"><a class="logo" href="#top">ADRIENNE ASHLEY</a><div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav><main id="top"><header class="mast"><div class="mast-meta mono"><span>Independent portfolio / 2026</span><span>Operations · Analytics · Strategy</span></div><h1 class="serif">Adrienne <em>Ashley.</em></h1><div class="mast-bottom"><p>Thoughtful systems. Better decisions.<br/>Meaningful impact.</p><a class="arrow" href="#work">Discover my work ↗</a></div></header><section class="feature"><div class="photo-wrap"><div class="photo-frame"><img alt="Portrait of Adrienne Ashley" src="portrait.jpeg"/><div class="photo-stamp mono">Behind the work / 01</div></div></div><div class="feature-text"><span class="mono">A different perspective</span><h2 class="serif">Better<br/>by <em>design.</em></h2><p>I bring together operational leadership, behavioral science, and analytical thinking to make complex systems work better—for organizations and the people they serve.</p><p>My work sits at the intersection of people, processes, and data.</p><a class="arrow" href="#about">More about me ↗</a></div></section></main></div><div class="ticker container mono"><span>Process improvement</span><span>Program leadership</span><span>Data-informed strategy</span><span>Healthcare operations</span></div><div class="container"><section class="section about" id="about"><div><span class="mono">01 / Perspective</span><h2 class="serif">A little<br/>about <em>me.</em></h2></div><div><p>I've always been the kind of person who wants to know why something works the way it does. And when something isn't working, I have a hard time leaving it alone.</p><p>That curiosity has followed me throughout my career, from serving in the U.S. Navy to working in behavioral science and leading clinical teams. Along the way, I've discovered that some of my favorite work happens behind the scenes: untangling complicated processes, finding patterns, and building systems that make everyone's lives a little easier.</p>
+</style><style>
+/* Responsive homepage refinements: tablet and mobile only */
+@media (max-width: 900px) {
+  .container { width: min(100% - 48px, 720px); }
+  .nav { height: auto; min-height: 82px; gap: 20px; flex-wrap: wrap; padding: 22px 0; }
+  .links { gap: clamp(14px, 4vw, 30px); flex-wrap: wrap; }
+  .mast h1 { white-space: normal; overflow-wrap: normal; font-size: clamp(58px, 10.4vw, 112px); line-height: 1.02; }
+  .feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 38px; }
+  .feature-text { padding-top: 0; }
+  .feature-text h2 { font-size: clamp(45px, 6vw, 74px); }
+  .about { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 35px; }
+}
+@media (max-width: 650px) {
+  html, body { max-width: 100%; overflow-x: clip; }
+  .container { width: calc(100% - 40px); }
+  .nav { display: flex; flex-direction: column; align-items: flex-start; gap: 17px; padding: 22px 0 20px; }
+  .logo { font-size: 15px; letter-spacing: .08em; }
+  .links { display: flex; width: 100%; justify-content: space-between; gap: 10px; }
+  .links a { font-size: 12px; letter-spacing: .075em; }
+  .mast { padding-top: 34px; }
+  .mast-meta { flex-direction: column; gap: 5px; font-size: 10px; line-height: 1.6; }
+  .mast h1 { font-size: clamp(46px, 11.2vw, 72px); line-height: 1.05; letter-spacing: -.065em; margin: 26px 0 22px; white-space: normal; overflow-wrap: normal; }
+  .mast-bottom { flex-direction: column; align-items: flex-start; gap: 22px; padding: 10px 0 30px; }
+  .mast-bottom p { font-size: 18px; line-height: 1.5; }
+  .mast-bottom .arrow { font-size: 13px; }
+  .feature { display: flex; flex-direction: column; gap: 42px; padding: 44px 0 65px; }
+  .photo-wrap { width: min(100% - 20px, 420px); margin: 0 19px 0 0; }
+  .photo-frame { aspect-ratio: 4/4.4; }
+  .photo-stamp { bottom: 13px; right: 13px; font-size: 10px; padding: 9px 11px; }
+  .feature-text { padding: 0; width: 100%; }
+  .feature-text h2 { font-size: clamp(49px, 12vw, 75px); line-height: 1.08; margin: 15px 0 20px; }
+  .feature-text p { font-size: 17px; line-height: 1.75; }
+  .feature-text .arrow { margin-top: 22px; }
+  .ticker { gap: 9px 18px; }
+  .ticker span { font-size: 10px; }
+  .section { padding: 62px 0; }
+  .about { display: block; }
+  .about h2 { font-size: clamp(48px, 11vw, 68px); margin: 17px 0 28px; }
+  .about p { font-size: 17px; line-height: 1.75; }
+  .tags { gap: 8px; }
+  .tags span { font-size: 12px; padding: 8px 10px; }
+  .work-kicker { flex-direction: column; gap: 5px; }
+  .work-heading { margin: 25px 0 52px; }
+  .work-heading h2 { font-size: clamp(47px, 11vw, 70px); }
+  .work-heading p { font-size: 17px; }
+  .giant-number { font-size: 125px; }
+  .first-project .giant-number { top: 10px; left: -6px; }
+  .project-main { margin-left: 0; padding-top: 88px; }
+  .project-main h3, .second-content h3 { font-size: clamp(43px, 10.5vw, 64px); overflow-wrap: break-word; }
+  .project-main p, .second-content p { font-size: 17px; }
+  .open-project a.arrow { font-size: 16px; white-space: normal; }
+  .free-diagram { margin-top: 40px; gap: 6px; }
+  .diagram-step { gap: 7px; }
+  .diagram-step strong { font-size: clamp(16px, 5vw, 23px); }
+  .diagram-step .mono { font-size: 9px; }
+  .diagram-connector { font-size: 16px; }
+  .slender-rule { margin: 60px 0; }
+  .second-content { padding-top: 95px; }
+  .second-project .giant-number { right: 10px; top: 10px; }
+  .loose-art { max-width: 100%; }
+  .contact { padding: 65px 0 75px; }
+  .contact h2 { font-size: clamp(46px, 10.8vw, 67px); overflow-wrap: break-word; }
+  .contact p { font-size: 17px; }
+  .contact-links { flex-direction: column; align-items: flex-start; gap: 22px; }
+  .contact-links .arrow { font-size: 15px; }
+  footer { flex-direction: column; align-items: flex-start; gap: 10px; font-size: 11px; }
+}
+@media (max-width: 360px) {
+  .container { width: calc(100% - 32px); }
+  .mast h1 { font-size: 10.8vw; }
+  .links a { font-size: 11px; }
+}
+</style>
+</head><body><div class="container"><nav class="nav"><a class="logo" href="#top">ADRIENNE ASHLEY</a><div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav><main id="top"><header class="mast"><div class="mast-meta mono"><span>Independent portfolio / 2026</span><span>Operations · Analytics · Strategy</span></div><h1 class="serif">Adrienne <em>Ashley.</em></h1><div class="mast-bottom"><p>Thoughtful systems. Better decisions.<br/>Meaningful impact.</p><a class="arrow" href="#work">Discover my work ↗</a></div></header><section class="feature"><div class="photo-wrap"><div class="photo-frame"><img alt="Portrait of Adrienne Ashley" src="portrait.jpeg"/><div class="photo-stamp mono">Behind the work / 01</div></div></div><div class="feature-text"><span class="mono">A different perspective</span><h2 class="serif">Better<br/>by <em>design.</em></h2><p>I bring together operational leadership, behavioral science, and analytical thinking to make complex systems work better—for organizations and the people they serve.</p><p>My work sits at the intersection of people, processes, and data.</p><a class="arrow" href="#about">More about me ↗</a></div></section></main></div><div class="ticker container mono"><span>Process improvement</span><span>Program leadership</span><span>Data-informed strategy</span><span>Healthcare operations</span></div><div class="container"><section class="section about" id="about"><div><span class="mono">01 / Perspective</span><h2 class="serif">A little<br/>about <em>me.</em></h2></div><div><p>I've always been the kind of person who wants to know why something works the way it does. And when something isn't working, I have a hard time leaving it alone.</p><p>That curiosity has followed me throughout my career, from serving in the U.S. Navy to working in behavioral science and leading clinical teams. Along the way, I've discovered that some of my favorite work happens behind the scenes: untangling complicated processes, finding patterns, and building systems that make everyone's lives a little easier.</p>
 <p>I'm a Board Certified Behavior Analyst with a background in organizational leadership, program development, and process improvement. More recently, I've been expanding into SQL and data analytics because I love the idea of using data to understand problems and make better decisions.</p>
 <p>I believe good systems should make people's lives easier, not more complicated. That's the perspective I bring to everything I build.</p>
 <div class="tags"><span>Operational Leadership</span><span>Lean Six Sigma Green Belt</span><span>Process Improvement</span><span>Program Development</span><span>Healthcare Operations</span><span>SQL · Healthcare Analytics</span></div></div></section>
