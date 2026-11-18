@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Employee experience research case study: structured interviews with 20 RBTs and workplace retention improvements."><title>Beyond the Exit Interview — Adrienne Ashley</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet"><style>
+:root{--paper:#f3f0e9;--ink:#252521;--sub:#66665e;--line:#c9c6bc;--sage:#727d6a}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 'DM Sans',sans-serif}a{color:inherit}a:focus-visible{outline:2px solid var(--sage);outline-offset:5px}.container{width:min(1050px,calc(100% - 9vw));margin:auto}.mono{font:500 12px/1.5 'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--sage)}.serif{font-family:'Playfair Display',Georgia,serif;font-weight:400;letter-spacing:-.05em}.nav{padding:30px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}.nav a{text-decoration:none}.nav .brand{font-weight:700;letter-spacing:.08em;font-size:15px}.nav .back{font-size:13px}.hero{padding:80px 0 68px;border-bottom:1px solid var(--line)}h1{font-size:clamp(60px,10vw,126px);line-height:1.04;margin:22px 0 24px}h1 em,h2 em{color:var(--sage);font-style:normal}.dek{font-size:clamp(19px,2.4vw,26px);line-height:1.5;max-width:790px;color:var(--sub)}.meta{display:flex;flex-wrap:wrap;gap:15px 45px;margin-top:48px}.meta span{font-size:13px}.section{display:grid;grid-template-columns:minmax(170px,.4fr) minmax(0,1fr);gap:50px;padding:75px 0;border-bottom:1px solid var(--line)}.section h2{font-size:clamp(34px,4vw,56px);line-height:1.14;margin:0}.section p:first-child{margin-top:0}.section p{margin:0 0 20px}.section ul{padding-left:22px;margin:0}.section li{margin:0 0 12px}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:25px 0}.metric{border-top:1px solid var(--sage);padding:16px 0}.metric strong{display:block;font:400 clamp(35px,5vw,62px) 'Playfair Display',serif;letter-spacing:-.04em}.metric small{display:block;color:var(--sub);font-size:14px}.note{border-left:2px solid var(--sage);padding-left:20px;color:var(--sub);font-size:15px}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:40px 0 70px;font-size:13px;color:var(--sub)}.footer a{text-decoration:underline;text-underline-offset:4px}@media(max-width:700px){.section{grid-template-columns:1fr;gap:22px;padding:50px 0}.hero{padding:50px 0}.meta{gap:15px}.metrics{gap:12px}.nav{align-items:flex-start}.container{width:calc(100% - 40px)}}
+</style><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/><style>
+/* Unified editorial identity — matches the approved homepage */
+:root{--paper:#f5f1ed;--ink:#241c1d;--sub:#655b58;--sage:#8e7a91;--line:#d6cec8;--faint:#eadfdc;--blush:#e9cbbf;--taupe:#777268;--plum:#8e7a91;--white:#fffcf9;--dark:#251d1e}
+html{scroll-behavior:smooth}body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.7}
+.serif{font-family:'DM Serif Display',Georgia,serif!important;font-weight:400;letter-spacing:-.045em}
+.mono{font-family:'DM Mono',monospace;font-size:clamp(12px,1.1vw,15px);letter-spacing:.065em}
+a:focus-visible,button:focus-visible{outline:3px solid var(--plum);outline-offset:5px}
+.container{width:min(1240px,calc(100% - 8vw))}
+.nav{min-height:88px;height:auto;padding:16px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.nav .logo,.nav .brand{font:700 15px 'DM Sans',sans-serif;letter-spacing:.13em}
+.nav .links{display:flex;gap:clamp(14px,3vw,34px);flex-wrap:wrap}
+.nav .links a,.nav .back{font:600 14px 'DM Sans',sans-serif;letter-spacing:0;text-transform:none}
+.nav .back{border:1px solid var(--ink);border-radius:40px;padding:11px 19px;text-decoration:none}
+.nav a:hover{color:#8e667b}
+.hero{position:relative;isolation:isolate;padding-top:clamp(65px,8vw,120px);padding-bottom:clamp(70px,8vw,115px);overflow:hidden}
+.hero:before{content:'';position:absolute;z-index:-1;right:-10%;top:5%;width:min(39vw,430px);aspect-ratio:1;border-radius:49% 51% 42% 58%;background:#e9cbbf;opacity:.5;transform:rotate(-22deg)}
+.hero h1{font-family:'DM Serif Display',Georgia,serif!important;font-size:clamp(62px,9.4vw,142px);font-weight:400;line-height:.99;letter-spacing:-.055em;margin-top:35px;margin-bottom:35px;max-width:1050px;overflow-wrap:break-word}
+.hero h1 em,.hero h2 em{color:#9c7b8f;font-style:normal}
+.hero .deck,.hero .dek{font-size:clamp(21px,2.5vw,30px);line-height:1.45;color:#514448;max-width:780px}
+.hero .eyebrow,.hero-top{color:#745c6e;font-size:clamp(12px,1.15vw,15px)}
+.meta,.hero-bottom{border-color:var(--line)}
+.meta b,.meta strong{color:var(--ink)}
+.chapter,.section{border-color:var(--line)}
+.chapter h2,.section h2,.workflow h2,.results h2,.next h2{font-family:'DM Serif Display',Georgia,serif!important;letter-spacing:-.04em;line-height:1.1}
+.chapter h2 em,.section h2 em,.workflow h2 em,.results h2 em{color:#9c7b8f;font-style:normal}
+.chapter p,.section p,.outcome p,.step p{color:#655b58;line-height:1.78;font-size:clamp(16px,1.5vw,19px)}
+.chapter-index,.mono,.step .circle,.workflow-note{color:#816579}
+.step .circle,.steps:before,.outcome{border-color:#b8a2b4}
+.stats,.metrics,.outcomes{border-color:var(--line)}
+.stat strong,.metric strong{color:#7f627e}
+.back{font-size:15px;font-weight:600}
+.next{background:#251d1e;color:#f5f1ed}
+.next h2 em{color:#e9cbbf}
+.next p{color:#e4d6d1}
+footer,.footer{border-color:var(--line);color:#665b5b}
+/* High visibility editorial reading labels */
+.hero .mono,.hero-top,.chapter-index,.section>.mono,.section>div>.mono,.eyebrow,.project-eyebrow{font-size:clamp(12px,1.1vw,15px);font-weight:600;letter-spacing:.06em}
+/* Make content accessible on small devices */
+@media(max-width:700px){.container{width:calc(100% - 38px)}.nav{min-height:76px;gap:10px}.nav .logo,.nav .brand{font-size:13px}.nav .links a,.nav .back{font-size:13px}.nav .back{padding:9px 13px}.hero{padding-top:55px;padding-bottom:65px}.hero:before{width:72vw;right:-34%;top:10%;opacity:.34}.hero h1{font-size:clamp(49px,11vw,82px);line-height:1.03}.hero .deck,.hero .dek{font-size:20px}.chapter,.section{padding-top:65px;padding-bottom:65px}.chapter p,.section p{font-size:17px}footer{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style><style>
+/* Tonal alignment with the approved homepage: quieter paper, taupe hero, restrained blush. */
+:root{--paper:#eee8e4;--ink:#241c1d;--sub:#514448;--line:#c9bdb9;--sage:#80677b;--faint:#e4d9d5;--warm:#dfd2ce;--plum:#8e7a91}
+body{background:var(--paper);color:var(--ink)}
+.hero{background:#777268;color:#fff1e9;padding-left:max(4vw,calc((100vw - 1440px)/2));padding-right:max(4vw,calc((100vw - 1440px)/2));margin-left:calc(-1 * max(4vw,calc((100vw - 1440px)/2)));margin-right:calc(-1 * max(4vw,calc((100vw - 1440px)/2)));}
+/* Keep the existing content grid and typography; only deepen the visual surfaces. */
+.hero:before{background:#bca8a8!important;opacity:.17!important}
+.hero h1,.hero h1 em,.hero h2 em{color:#f2d5cb!important}
+.hero .deck,.hero .dek,.hero .eyebrow,.hero .mono,.hero .hero-top,.hero .hero-top span,.hero .hero-bottom,.hero .meta,.hero .meta b,.hero .meta strong{color:#fff1e9!important}
+.hero .meta,.hero .hero-bottom{border-color:#b4aaa5!important}
+.hero .meta span,.hero .hero-bottom span{color:#f0e2dc!important}
+.hero .back{color:#fff1e9!important;border-color:#f2d5cb!important}
+.hero .back:hover{background:#f2d5cb;color:#241c1d!important}
+.chapter h2 em,.section h2 em,.results h2 em,.figure h2 em{color:#85677e!important}
+.resource{background:#e1d5d1}
+.track{background:#d8cbc7}
+.fill{background:#8e7a91}
+@media(max-width:700px){.hero{padding-left:19px;padding-right:19px;margin-left:-19px;margin-right:-19px}}
+</style></head><body><div class="container"><nav class="nav"><a class="brand" href="index.html">ADRIENNE ASHLEY</a><a class="back" href="index.html#work">← All projects</a></nav><main><header class="hero"><span class="mono">Employee experience / Behavioral research / Professional initiative</span><h1 class="serif">Beyond the<br><em>exit interview.</em></h1><p class="dek">Understanding why employees stay—and using structured research to improve the experience of work.</p><div class="meta"><span><b>Role:</b> Independent research lead & project owner</span><span><b>Participants:</b> 20 RBTs</span><span><b>Methods:</b> Structured interviews, spreadsheet analysis, review of interview notes</span></div></header>
+<section class="section"><div><span class="mono">01 / Context</span><h2 class="serif">The <em>challenge.</em></h2></div><div><p>Employee turnover was creating workforce instability in a behavioral healthcare setting. I wanted to move beyond assumptions about why employees left and investigate what made current employees want to stay.</p><p><b>Research question:</b> Which aspects of the employee experience were most meaningful to RBTs who remained with the organization, and what could be improved?</p></div></section>
+<section class="section"><div><span class="mono">02 / Approach</span><h2 class="serif">How I <em>investigated.</em></h2></div><div><p>I independently interviewed 20 RBTs using a consistent set of questions. I organized responses in spreadsheets, analyzed the data, and reviewed my notes to identify recurring trends across interviews.</p><p>The project combined employee-reported experiences with workforce measures used to evaluate changes over time. Because the interview guide and original data are employer-owned and unavailable, this account describes the process retrospectively rather than reproducing source materials.</p></div></section>
+<section class="section"><div><span class="mono">03 / Findings</span><h2 class="serif">What <em>emerged.</em></h2></div><div><p><b>Protected time matters.</b> Employees identified structured, uninterrupted breaks as a meaningful part of a better work experience.</p><p><b>Recognition matters.</b> Public acknowledgment and awards emerged as valued ways to recognize employee contributions.</p><p>These themes suggested opportunities to improve day-to-day work conditions and employee acknowledgment—not simply to focus on turnover as an administrative metric.</p></div></section>
+<section class="section"><div><span class="mono">04 / Action</span><h2 class="serif">From insight <em>to change.</em></h2></div><div><p>I independently implemented protected break schedules and a formal employee recognition and awards program. Both changes were informed by the themes identified through employee interviews.</p></div></section>
+<section class="section"><div><span class="mono">05 / Evaluation</span><h2 class="serif">What <em>changed.</em></h2></div><div><p>Over a six-month evaluation period, I observed the following workforce measures:</p><div class="metrics"><div class="metric"><strong>40% → 25%</strong><small>Reported employee turnover; 15 percentage-point reduction</small></div><div class="metric"><strong>3 → 6 months</strong><small>Reported average employee tenure</small></div></div><p class="note">These are retrospective, self-reported project results. Without a controlled comparison, the improvements cannot be attributed exclusively to the implemented changes.</p></div></section>
+<section class="section"><div><span class="mono">06 / Reflection</span><h2 class="serif">Research <em>judgment.</em></h2></div><div><p>Interviewing employees who stayed helped surface conditions they valued, but did not necessarily explain the experiences of employees who resigned. The project also took place in an organizational setting where other factors may have influenced retention.</p><p>The most transferable lesson was the value of listening systematically, looking for recurring patterns, and connecting research findings to practical changes that could be evaluated.</p><p class="note">Confidentiality note: This case study was reconstructed from professional recollection. Original interview notes, datasets, employee information, and employer-owned materials are not included.</p></div></section></main><footer class="footer"><span>Adrienne Ashley · Research & experience improvement</span><a href="index.html#work">Back to selected work ↑</a></footer></div></body></html>
