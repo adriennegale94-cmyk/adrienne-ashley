@@ -295,6 +295,126 @@ a:focus-visible {
 @media(prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Project inquiry form */
+
+.inquiry {
+  margin-top: 65px;
+  padding: 45px;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 4px;
+  max-width: 1000px;
+  scroll-margin-top: 30px;
+}
+
+.inquiry h3 {
+  font-size: clamp(36px, 5vw, 65px);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+  margin: 0 0 20px;
+}
+
+.inquiry p {
+  color: #514947;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.form-field label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #b9aaa2;
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--plum);
+  outline-offset: 2px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.inquiry .form-notice {
+  font-size: 13px;
+  color: #675957;
+  margin: 25px 0;
+  line-height: 1.6;
+}
+
+.inquiry-submit {
+  background: var(--dark);
+  color: var(--white);
+  border: 1px solid var(--dark);
+  border-radius: 40px;
+  padding: 16px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.inquiry-submit:hover {
+  background: var(--blush);
+  color: var(--ink);
+}
+
+.inquiry-submit:focus-visible {
+  outline: 3px solid var(--plum);
+  outline-offset: 4px;
+}
+
+@media(max-width: 600px) {
+  .inquiry {
+    padding: 25px;
+    margin-top: 40px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .inquiry-submit {
+    width: 100%;
+  }
+}
+  
 </style>
 </head>
 
@@ -493,10 +613,79 @@ a:focus-visible {
     <p>Available for independent, remote research engagements.</p>
 
     <div class="footer-actions">
-      <a class="button" href="mailto:adrienne.gale94@gmail.com?subject=Research%20Project%20Inquiry">Discuss your project ↗</a>
-
-      <a class="button" href="https://www.linkedin.com/in/adrienne-ashley-m-ed-bcba-lba-38166b143/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+    <a class="button" href="#inquiry">Discuss your project ↗</a>
+     <a class="button" href="https://www.linkedin.com/in/adrienne-ashley-38166b143/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
     </div>
+
+<section id="inquiry" class="inquiry">
+
+  <h3 class="serif">Tell me about your project.</h3>
+
+  <p>Share a little about what you're working on, what you'd like to learn, and how I can help.</p>
+
+  <form action="https://formspree.io/f/xrpqldkp" method="POST">
+
+    <div class="form-grid">
+
+      <div class="form-field">
+        <label for="name">Your name *</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email address *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="company">Company or studio</label>
+        <input type="text" id="company" name="company" autocomplete="organization">
+      </div>
+
+      <div class="form-field">
+        <label for="service">Service of interest *</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option>Games User Research</option>
+          <option>UX Research &amp; Usability</option>
+          <option>Behavioral Data &amp; Analytics</option>
+          <option>Research &amp; Process Consulting</option>
+          <option>Other / Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="budget">Estimated budget (USD)</label>
+        <select id="budget" name="budget">
+          <option value="">Select a budget range</option>
+          <option>Under $500</option>
+          <option>$500–$1,000</option>
+          <option>$1,000–$2,500</option>
+          <option>$2,500–$5,000</option>
+          <option>$5,000+</option>
+          <option>Open to discussion</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="timeline">Anticipated timeline</label>
+        <input type="text" id="timeline" name="timeline" placeholder="When would you like to begin?">
+      </div>
+
+      <div class="form-field full-width">
+        <label for="message">Tell me about your project *</label>
+        <textarea id="message" name="message" rows="6" placeholder="Research goals, project details, and desired outcomes..." required></textarea>
+      </div>
+
+    </div>
+
+    <p class="form-notice">Please do not include confidential or sensitive information in your initial inquiry. Your submission will be processed through Formspree and used to respond to your request.</p>
+
+    <button type="submit" class="inquiry-submit">Submit project inquiry ↗</button>
+
+  </form>
+
+</section>
 
     <div class="bottom">
       <span>© <span id="year">2026</span> Adrienne Ashley</span>
