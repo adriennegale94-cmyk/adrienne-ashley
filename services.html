@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Independent UX research, games user research, behavioral analysis, and research consulting services by Adrienne Ashley.">
+<title>Research Services — Adrienne Ashley</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #241c1d;
+  --taupe: #777268;
+  --blush: #e9cbbf;
+  --paper: #f5f1ed;
+  --white: #fffcf9;
+  --plum: #8e7a91;
+  --line: #d6cec8;
+  --dark: #251d1e;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+a:focus-visible {
+  outline: 3px solid var(--plum);
+  outline-offset: 4px;
+}
+
+.serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+}
+
+.wrap {
+  width: min(1440px, calc(100% - 8vw));
+  margin: auto;
+}
+
+.nav {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.wordmark {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.navlinks {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navlinks a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navlinks a:hover { opacity: .7; }
+
+.contact-pill {
+  border: 1px solid currentColor;
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+
+.hero {
+  background: var(--taupe);
+  color: #fff5ee;
+}
+
+.hero-content {
+  padding: 100px 0 110px;
+  max-width: 1100px;
+}
+
+.eyebrow {
+  font: 500 14px 'DM Mono', monospace;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(65px, 10vw, 150px);
+  line-height: .96;
+  letter-spacing: -.05em;
+  color: var(--blush);
+  margin: 28px 0;
+}
+
+.hero p {
+  font-size: clamp(19px, 2vw, 26px);
+  line-height: 1.65;
+  max-width: 760px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 40px;
+  padding: 15px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: var(--blush);
+  color: var(--ink);
+}
+
+.section-tag {
+  font: 500 14px 'DM Mono', monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #675957;
+}
+
+.section {
+  padding: 95px 0;
+}
+
+.section h2 {
+  font-size: clamp(45px, 6vw, 90px);
+  line-height: 1.05;
+  letter-spacing: -.035em;
+  margin: 20px 0 30px;
+}
+
+.section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #514947;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6vw;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.service {
+  padding: 38px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.service:nth-child(2) { background: #e9e0da; }
+.service:nth-child(3) { background: #e3dbe5; }
+.service:nth-child(4) { background: #ead7cf; }
+
+.service h3 {
+  font: 400 clamp(29px, 3vw, 43px)/1.1 'DM Serif Display', Georgia, serif;
+  margin: 25px 0 18px;
+}
+
+.service ul {
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #514947;
+}
+
+.service-number {
+  font: 500 14px 'DM Mono', monospace;
+}
+
+.process {
+  background: #e9e0da;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.process-step {
+  border-top: 1px solid #a89a94;
+  padding-top: 24px;
+}
+
+.process-step h3 {
+  font: 400 32px 'DM Serif Display', Georgia, serif;
+  margin: 15px 0;
+}
+
+.process-step p { font-size: 16px; }
+
+.expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.expertise span {
+  border: 1px solid #b9aaa2;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.confidentiality {
+  border-top: 1px solid var(--line);
+}
+
+.footer {
+  background: var(--dark);
+  color: #f3e7e1;
+  padding: 90px 0 45px;
+}
+
+.footer h2 {
+  font-size: clamp(60px, 9vw, 130px);
+  line-height: .98;
+  letter-spacing: -.045em;
+  margin: 25px 0;
+}
+
+.footer h2 em { color: var(--blush); }
+
+.footer p {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #eadbd4;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bottom {
+  border-top: 1px solid #76635d;
+  padding-top: 25px;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #d6c5bc;
+  font-size: 14px;
+}
+
+@media(max-width: 850px) {
+  .intro { grid-template-columns: 1fr; gap: 15px; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 600px) {
+  .wrap { width: calc(100% - 36px); }
+  .nav { flex-wrap: wrap; padding: 20px 0; gap: 15px; }
+  .navlinks { gap: 15px; flex-wrap: wrap; }
+  .navlinks a { font-size: 12px; }
+  .wordmark { font-size: 12px; }
+  .contact-pill { padding: 8px 13px; }
+  .hero-content { padding: 65px 0 75px; }
+  .section { padding: 65px 0; }
+  .service-grid, .process-grid { grid-template-columns: 1fr; }
+  .service { padding: 28px; }
+  .bottom { flex-direction: column; }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="wrap">
+
+    <nav class="nav" aria-label="Main navigation">
+      <a class="wordmark" href="index.html">ADRIENNE ASHLEY</a>
+      <div class="navlinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#work">Selected Work</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a class="contact-pill" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <span class="eyebrow">Independent Research & Consulting</span>
+
+      <h1 class="serif">Understanding<br><em>the human experience.</em></h1>
+
+      <p>I help teams understand how people interact with products, games, and systems, turning behavioral observations into meaningful insights and practical design recommendations.</p>
+
+      <a class="button" href="#services">Explore research services ↘</a>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="section intro wrap">
+    <span class="section-tag">01 / Approach</span>
+
+    <div>
+      <h2 class="serif">Behavioral science.<br><em>Better experiences.</em></h2>
+
+      <p>Understanding what people do is only part of the picture. Understanding why they do it is where research becomes especially valuable.</p>
+
+      <p>My approach combines behavioral science, systematic observation, qualitative research, and data analysis to help identify barriers, understand user decisions, and uncover opportunities for improvement.</p>
+
+      <p>I offer independent, remote research services for game developers, product teams, and organizations seeking a clearer understanding of the people they serve.</p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="services">
+
+    <span class="section-tag">02 / Services</span>
+    <h2 class="serif">How I can help.</h2>
+
+    <p>Research services tailored to your questions, development stage, and project goals.</p>
+
+    <div class="service-grid">
+
+      <article class="service">
+        <span class="service-number">01 / GAME DEVELOPMENT</span>
+        <h3>Games User Research</h3>
+        <p>Understand how players navigate, interpret information, learn mechanics, and respond to game design.</p>
+        <ul>
+          <li>Exploratory usability evaluations</li>
+          <li>Player progression and friction analysis</li>
+          <li>Onboarding and tutorial evaluation</li>
+          <li>Mechanic comprehension and system feedback</li>
+          <li>Developer-facing recommendations</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <span class="service-number">02 / USER EXPERIENCE</span>
+        <h3>UX Research & Usability</h3>
+        <p>Identify barriers that affect how people interact with digital products, services, and systems.</p>
+        <ul>
+          <li>Exploratory usability assessments</li>
+          <li>Moderated usability testing</li>
+          <li>Research interviews</li>
+          <li>User journey and friction analysis</li>
+          <li>Qualitative research synthesis</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <span class="service-number">03 / RESEARCH DATA</span>
+        <h3>Behavioral Data & Analytics</h3>
+        <p>Transform observations and complex datasets into structured, interpretable research evidence.</p>
+        <ul>
+          <li>Behavioral coding and observation frameworks</li>
+          <li>Research dataset development</li>
+          <li>Relational databases and SQL analysis</li>
+          <li>Interactive Power BI dashboards</li>
+          <li>Data visualization and reporting</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <span class="service-number">04 / SYSTEMS & STRATEGY</span>
+        <h3>Research & Process Consulting</h3>
+        <p>Apply human-centered research and process improvement principles to organizational challenges.</p>
+        <ul>
+          <li>Research planning and methodology</li>
+          <li>Workflow and process evaluation</li>
+          <li>Performance measurement frameworks</li>
+          <li>Research documentation and synthesis</li>
+          <li>Evidence-informed recommendations</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="wrap">
+
+      <span class="section-tag">03 / Research Process</span>
+      <h2 class="serif">From questions to clarity.</h2>
+
+      <div class="process-grid">
+
+        <div class="process-step">
+          <span class="service-number">01</span>
+          <h3>Discover.</h3>
+          <p>Define your research questions, project requirements, and the decisions the research should inform.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="service-number">02</span>
+          <h3>Observe.</h3>
+          <p>Develop an appropriate methodology and collect evidence through structured observation, testing, or interviews.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="service-number">03</span>
+          <h3>Analyze.</h3>
+          <p>Organize the evidence, identify meaningful patterns, and distinguish observations from interpretations.</p>
+        </div>
+
+        <div class="process-step">
+          <span class="service-number">04</span>
+          <h3>Translate.</h3>
+          <p>Deliver clear findings, practical recommendations, and appropriate supporting research materials.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+
+    <span class="section-tag">04 / Background</span>
+    <h2 class="serif">A different perspective.</h2>
+
+    <p>I'm a master's-level behavioral scientist and Board Certified Behavior Analyst with professional experience in behavioral assessment, systematic observation, data analysis, clinical leadership, and process improvement.</p>
+
+    <p>I bring that foundation to user research, combining an understanding of human behavior with analytical tools and a genuine curiosity about how experiences can be improved.</p>
+
+    <div class="expertise">
+      <span>Master of Science</span>
+      <span>Board Certified Behavior Analyst</span>
+      <span>Lean Six Sigma Green Belt</span>
+      <span>Behavioral research</span>
+      <span>Qualitative analysis</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Research reporting</span>
+    </div>
+
+    <a class="button" href="index.html#work">Explore my selected work ↗</a>
+
+  </section>
+
+  <section class="section confidentiality wrap">
+
+    <span class="section-tag">05 / Working Together</span>
+    <h2 class="serif">Thoughtful research.<br><em>Responsible practices.</em></h2>
+
+    <p>Each engagement is scoped individually based on your research goals, methodology, project complexity, and desired deliverables. Project-based pricing is available upon inquiry.</p>
+
+    <p>Confidentiality, participant consent, responsible data handling, and publication permissions are established before research begins. Client materials and identifiable findings will not be publicly shared without appropriate authorization.</p>
+
+    <p>Research findings are communicated alongside their limitations so that recommendations remain grounded in the available evidence.</p>
+
+  </section>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+
+    <span class="eyebrow">06 / Project Inquiries</span>
+
+    <h2 class="serif">Let's ask<br><em>better questions.</em></h2>
+
+    <p>Have a game, product, or research question you'd like to explore? I'd love to hear about your project and discuss how I might help.</p>
+
+    <p>Available for independent, remote research engagements.</p>
+
+    <div class="footer-actions">
+      <a class="button" href="mailto:adrienne.gale94@gmail.com?subject=Research%20Project%20Inquiry">Discuss your project ↗</a>
+
+      <a class="button" href="https://www.linkedin.com/in/adrienne-ashley-m-ed-bcba-lba-38166b143/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+    </div>
+
+    <div class="bottom">
+      <span>© <span id="year">2026</span> Adrienne Ashley</span>
+      <span>Thoughtful research. Better experiences. Meaningful impact.</span>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
